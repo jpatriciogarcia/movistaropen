@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="4.5.2" type="mambot" group="content">
+	<name>pollxtbot</name>
+	<author>Oli Merten</author>
+	<creationDate>06.06.2006</creationDate>
+	<copyright>(C) 2005-2006 Oli Merten</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>webmaster@joomlaxt.com</authorEmail>
+	<authorUrl>www.joomlaxt.com</authorUrl>
+	<version>0.50.02</version>
+	<description>displays PollXT in content items</description>
+	<files>
+		<filename mambot="pollxtbot">pollxtbot.php</filename>
+	</files>
+	<params/>
+</mosinstall>

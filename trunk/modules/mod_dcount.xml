@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>dCount</name>
+	<author>Denn</author>
+	<creationDate>14/03/2007</creationDate>
+	<copyright>(C) 2006-2007 sDenn</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>joomla@sdenn.com</authorEmail>
+	<authorUrl>www.sdenn.com</authorUrl>
+	<version>1.0.1b</version>
+	<description>Denn’s Count Module, displays dynamically count-down or count-up to the specific date. 
+Time is taken from the server, and using JavaScript to display the counter. You can choose from various formats to display the counter. It is multilingual, and support plural forms. Custom title for countdown and count-up. Multi-templates support. Additional there is a german_bs_rename.php file include espacialy for Carneval groups!
+ </description>
+
+	<files>
+		<filename module="mod_dcount">mod_dcount.php</filename>
+		<filename module="mod_dcount">mod_dcount/dcount_css_default.css</filename>
+		<filename module="mod_dcount">mod_dcount/english.php</filename>
+		<filename module="mod_dcount">mod_dcount/hebrew.php</filename>
+		<filename module="mod_dcount">mod_dcount/russian.php</filename>
+		<filename module="mod_dcount">mod_dcount/german.php</filename>
+		<filename module="mod_dcount">mod_dcount/german_DE.php</filename>
+	</files>
+		<params>
+		<param name="Day" type="text" default="01" label="Day" description="Day of the event"/>
+		<param name="Month" type="text" default="01" label="Month" description="Month of the event"/>
+		<param name="Year" type="text" default="2007" label="Year" description="Year of the event"/>
+		<param name="Hour" type="text" default="12" label="Hour" description="Hour of the event"/>
+		<param name="Minute" type="text" default="00" label="Minute" description="Minute of the event"/>
+		<param name="Offset" type="text" default="0" label="Hour offset of the server" description="Used to correct the timezone"/>
+		<param name="Format" type="text" default="1" label="Date/Time format" description="Set display format (1-4)"/>
+		</params>
+</mosinstall>

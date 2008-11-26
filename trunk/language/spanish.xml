@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="1.0.12" type="language">
+	<name>Spanish  - Español Formal Neutro Tu</name>
+	<version>1.0.12</version>
+	<creationDate>20.11.2006</creationDate>
+	<author>Equipo de Traducción de la Comunidad Hispana de Joomla! www.todosjuntos.org</author>
+	<authorEmail>traduccion@todosjuntos.org</authorEmail>
+	<files>
+		<filename>spanish.php</filename>
+		<filename>spanish.xml</filename>
+		<filename>spanish.ignore.php</filename>
+	</files>
+</mosinstall>
