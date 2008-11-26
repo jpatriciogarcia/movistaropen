@@ -1,0 +1,18 @@
+.countdown {
+	height: 51px;
+	width: 115px;
+	font-weight: bold;
+	font-size: 20px;
+	COLOR: #FFF;
+	LINE-HEIGHT: 17px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	background-image: url(images/fondo-reloj_curvo.jpg);
+	padding-top: 60px;
+	padding-left: 40px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.countdown_title {
+	display: none;
+	background-color: #000;
+}

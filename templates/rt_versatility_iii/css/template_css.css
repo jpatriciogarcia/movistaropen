@@ -1,0 +1,1866 @@
+/* @group Main */
+
+html {
+  /* this is a hack to force scrollbars on at 
+     all times so that the page does not jump
+     when going from short to long pages */
+  height: 100%;
+  margin-bottom: 1px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+  /* setup some more readable paragraph spacing */
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h4 {
+	/* setup some more readable header spacing */
+  	padding-bottom: 5px;
+	margin: 15px 0;
+}
+
+/* @group Fonts */
+
+/* @group Sizes */
+
+
+body {
+	font-size: 13px;
+}
+
+body.f-smaller {
+	font-size: 10px;
+}
+
+body.f-default {
+	font-size: 12px;
+}
+
+body.f-larger {
+	font-size: 15px;
+}
+
+body.f-destacados {
+	font-size: 10px;
+}
+
+
+h1 {
+	font-size: 200%;
+}
+
+h2 {
+	font-size: 180%;
+}
+
+h3 { 
+   font-size: 150%;
+}
+
+h4 {
+	font-size:  120%;
+}
+
+
+.destacados {
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+
+}
+
+
+.titulodearticulos {
+	color: #3B5472;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	line-height:20px
+}
+
+
+
+.bajadadearticulos {
+	color: #040D38;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	}
+
+
+
+
+.small,
+.modifydate,
+.createdate,
+div.mosimage_caption {
+	font-size: 95%;
+}
+
+div.moduletable h3,
+.componentheading {
+	font-size: 145%;
+}
+
+table.sections .contentheading {
+	font-size: 145%;
+}
+
+.contentheading {
+	font-size: 160%;
+}
+
+.componentheading {
+ margin-bottom: 15px;
+}
+
+td.componentheading {
+	padding-bottom: 15px;
+}
+
+/* @end */
+
+/* @group Family */
+
+body {
+		line-height: 135%;
+		font-family: Arial, Helvetica, sans-serif;
+}
+
+.contentheading,
+.componentheading {
+	font-weight: bold;
+}
+
+
+a {
+	/* color: see style css */
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* @end */
+
+/* @end */
+
+/* @end */
+
+/* @group Structure */
+
+/* @group pull-down */
+
+#fxContainer {
+	position: absolute;
+	padding-top: 0px;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 0;
+}
+
+#fxTarget { 
+	padding-top: 1px;
+	margin: 0;
+	width: 100%;
+	position: relative;
+	top: 0;
+	z-index: 100;
+	height: 0;
+	overflow: hidden;
+}
+
+#fxPadding {
+	visibility: hidden;
+	padding: 0 45px;
+}
+
+#fxTrigger {
+	position: relative;
+	cursor: pointer;
+}
+
+#fxTab {
+	position: relative;
+	margin: -6px auto 0;
+	text-align: center;
+	height: 38px;
+	line-height: 36px;
+	font-weight: bold;
+	width: 176px;
+	z-index: 100;
+}
+
+#fxTab a,
+#fxContainer a {
+	z-index: 100;
+}
+
+#fxTab a:hover {
+	text-decoration: none;
+}
+
+/* @end */
+
+/* @group mainbody */
+
+
+td.mainbody {
+	width: 100%;
+}
+
+div#mainbody .contentheading {
+	font-size: 200%;
+}
+
+
+/* @end */
+
+
+
+#template {
+	position: relative;
+}
+
+img#logo {
+	position:  absolute;
+	float: left;
+	margin-left: 20px;
+	margin-top: 40px;
+	width: 327px;
+	height: 57px;
+}
+
+img#cabecera {
+	position:  absolute;
+	float: left;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 894px;
+	height: 108px;
+	overflow: visible;
+	visibility: visible;
+	z-index:51;
+}
+
+div#banner {
+	margin-left:  370px;
+	padding-top: 20px;
+	height: 84px;
+	overflow: hidden;
+}
+
+div#banner .padding {
+	padding:  10px;
+}
+
+div#horiz-menu {
+	height: 46px;
+}
+
+table.mainbody,
+table.usermodules,
+table.sections {
+	width: 100%;
+	padding: 0;
+}
+
+td.section {
+	padding: 0;
+}
+
+td.section.w49 {
+	width: 50%;
+}
+
+td.section.w24 {
+	width: 33%;
+}
+
+td.mainbody .padding {
+	padding: 15px;
+}
+
+div#footer .rk-2 {
+	height: 114px;
+	overflow: hidden;
+}
+
+div#the-footer {
+	text-align: center;
+}
+
+img#rocket {
+	width: 150px;
+	height: 105px;
+}
+
+/* @group content */
+
+/* @group menus */
+
+/* @group Horiz Menu */
+
+div#horiz-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+div#horiz-menu li {
+	margin: 0;
+	padding: 0;
+	padding-right: 2px;
+	float: left;
+	list-style: none;
+}
+
+div#horiz-menu a {
+	display: block;
+	float: left;
+	padding: 0 25px;
+	height: 42px;
+	line-height: 40px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+
+/* @end */
+
+/* @group Side Menu */
+
+/* side menu is just a standard list so it will work with a hilite */
+
+.sidenav a{
+	font-weight: bold;
+}
+
+/* @end */
+
+/* @group Contact Menu */
+
+div#top ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+div#top li {
+	float:  left;
+	list-style: none;
+	margin-right: 20px;
+}
+
+div#top li img {
+	float:  left;
+	vertical-align: middle;
+}
+
+div#top a.mainlevel {
+	display:  block;
+	float:  left;
+	background: none;
+	margin: 0;
+	padding: 0 5px;
+	font-weight:  bold;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Code */
+
+pre {
+	padding: 10px;
+}
+
+/* @end */
+
+
+
+
+
+/* @group Notices */
+
+span.alert,
+span.info,
+span.download,
+span.note {
+	display: block;
+	padding: 10px 10px 10px 50px;
+	margin: 15px 0;	
+}
+
+/* @end */
+
+/* @group Lists */
+#section1 ul,
+#section2 ul,
+#mainbody ul {
+	margin-left: 0;
+	padding-left: 1em;
+}
+
+#section1 li,
+#section2 li,
+#mainbody li {
+	margin-left: 0;
+	list-style: none;
+	padding-left: 25px;
+	padding-top: 2px;
+	margin-bottom: 3px;
+}
+
+
+
+#mainbody ul.check1,
+#mainbody ul.check2,
+#mainbody ul.arrow1,
+#mainbody ul.arrow2,
+#mainbody ul.arrow3,
+#mainbody ul.star,
+#mainbody ul.circle,
+#mainbody ul.morespace {
+	margin-left: 35px;
+	padding: 0;
+}
+
+ul.check1 li,
+ul.check2 li,
+ul.arrow1 li,
+ul.arrow2 li,
+ul.arrow3 li,
+ul.star li,
+ul.circle li,
+li.check1,
+li.check2,
+li.arrow1,
+li.arrow2,
+li.arrow3,
+li.star,
+li.circle {
+	list-style: none;	
+	padding-bottom: 15px;
+	padding-left: 40px;
+}
+
+/* @end */
+
+/* @group Blockquote */
+
+blockquote {
+	width: auto;
+	padding: 10px 10px 10px 80px;
+	margin: 15px 0;
+}
+
+/* @group My Group */
+
+/* @end */
+
+/* @end */
+
+/* @group Login Area */
+
+#fxPadding div.moduletable h3 {
+	float: left;
+	margin: 0;
+	padding: 0;
+	line-height: 40px;
+	height: 40px;
+}
+
+#fxPadding form {
+	float: left;
+	padding-left: 30px;
+	height: 22px;
+	margin-top: 8px;
+}
+
+#fxPadding div.loginelement {
+	float: left;
+	margin-left: 30px;
+	height: 22px;
+	line-height: 22px
+}
+
+#fxPadding div.loginelement input {
+	width: 100px;
+	padding-left: 5px;
+}
+
+span.loginsubmit,
+span.logoutsubmit {
+	display: block;
+	padding-left: 8px;
+	margin-left: 10px;
+	line-height: 25px;
+	width: 96px;
+	float: left;
+	cursor: pointer;
+}
+
+/* @end */
+
+/* @group Regular Content Items */
+
+table.contentpaneopen tbody tr td span.small,
+td.createdate {
+	padding-left: 20px;
+}
+
+/* @end */
+
+.screenshot {
+	float:  right;
+	margin-top: -35px;
+	z-index: 9;
+}
+
+.hide {
+	display: none;
+}
+
+form {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+table.blog span.article_seperator {
+	display: block;
+	height: 20px;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Joomla Core */
+
+/* @group modules */
+
+div.moduletable,
+div.moduletable-hilite1,
+div.moduletable-hilite2,
+div.moduletable-hilite3,
+div.moduletable-hilite4,
+div.moduletable-hilite5,
+div.moduletable-hilite6,
+div.moduletable-hilite7,
+div.moduletable-hilite8 {
+	padding: 0 0px 0px 0px;
+}
+
+div.moduletable h3,
+div.moduletable-hilite1 h3,
+div.moduletable-hilite2 h3,
+div.moduletable-hilite3 h3,
+div.moduletable-hilite4 h3,
+div.moduletable-hilite5 h3,
+div.moduletable-hilite6 h3,
+div.moduletable-hilite7 h3,
+div.moduletable-hilite8 h3 {
+	margin: 0 -15px 15px -15px;
+	padding: 10px 15px;
+	line-height: 100%;
+}
+
+td.left div.moduletable,
+td.right div.moduletable {
+	margin-bottom: 5px;
+}
+
+/* @end */
+
+/* @group content */
+
+.contentheading {
+	padding: 10px 0;
+	line-height:100%;
+}
+
+td.buttonheading {
+ 	vertical-align: middle;
+}
+
+td.buttonheading img {
+	margin-right: 5px;
+}
+
+table.contentpaneopen, table.contentpane {
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+div.contentpane, div.contentpaneopen {
+  width: 100%;
+}
+
+.clr {
+	clear: both;
+}
+
+div.mosimage {
+  margin: 5px;
+}
+
+a.readon {
+	margin-top: 15px;
+	display: block;
+	width:  116px;
+	height: 36px;
+	line-height: 26px;
+	padding-left: 5px;
+	font-weight: bold;
+	/* background: see style css */
+}
+
+a.readon:hover {
+	text-decoration: none;
+}
+
+span.content_rating img {
+	vertical-align: top;
+}
+
+.modifydate {
+	height: 20px;
+	vertical-align: bottom;
+}
+
+.createdate {
+	height: 20px;
+	vertical-align: top;
+	vertical-align: top;
+	padding-bottom: 5px;
+	padding-top: 0px;
+}
+
+table.contenttoc {
+  margin: 5px;
+  padding: 5px;
+}
+
+table.contenttoc td {
+  padding: 0 5px;
+}
+
+/* @end */
+
+/* @group pathway */
+
+span.pathway {
+	display: block;
+	float:  left;
+	height: 16px;
+	line-height: 18px;
+	vertical-align: middle;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+span.pathway img {
+	float:  left;
+	margin: 0 12px 0 14px;
+	border: 0;
+	width: 17px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+span.pathway a {
+	float:  left;
+	font-weight: normal;
+}
+
+
+/* @end */
+
+/* @group sections */
+
+table.mainbody td.mainbody td.sectiontableheader {
+  font-weight: bold;
+  padding: 4px;
+  line-height: 20px;
+}
+
+tr.sectiontableentry1 td,
+tr.sectiontableentry2 td,
+td.sectiontableentry1,
+td.sectiontableentry2 {
+  padding: 5px;
+}
+
+/* @group My Group */
+
+/* @end */
+
+.pollstableborder {
+	text-align: left;
+}
+
+.pollstableborder .sectiontableentry1,
+.pollstableborder .sectiontableentry2 {
+	background: none;
+	border:  0;
+}
+
+
+/* @end */
+
+/* @group mainmenu */
+
+a.mainlevel {
+	text-decoration: none;
+}
+
+a.mainlevel {
+	font-weight: bold;
+	display: block;
+	padding: 2px 0 2px 20px;
+	margin-bottom: 3px;
+}
+
+a.sublevel {
+	font-weight: bold;
+	text-decoration: none;
+	padding-left: 10px;
+}
+
+a.mainlevel:hover {
+	text-decoration: underline;
+}
+
+a.sublevel:hover {
+	text-decoration: none;
+}
+
+.nounder {
+	text-decoration: none;
+	border: 0;
+}
+
+.style-wrapper {
+	padding-left: 70px;
+	padding-top: 30px;
+}
+
+.style {
+	float: left;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+
+
+
+/* INDALO - LISTADO JUGADORES */
+
+
+.titulojugadores {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+		
+}
+
+.titulotrayectoria {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+		
+}
+
+.datostitulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+		
+}
+
+.datosresultados {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	color: #000000;
+		
+}
+
+.listado {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	color: #000000;
+	text-decoration: underline;
+	padding-left:5px;		
+}
+
+
+div#fondofoto{
+	position:relative;
+	width: 524px;
+	height: 177px;
+	top: 0px;
+	background-image: url(images/perfil-de-jugadores3.jpg);
+	background-repeat: no-repeat;
+}
+
+div#fondolistado{
+	position:relative; 
+	width: 135px;
+	height: 300px;
+	top: 5px;
+	left:43px;
+	background-color: #E9E7E8;
+	
+}
+
+div#tablatrayectoria {
+	position:relative; 
+	width: 300px;
+	top: 5px;
+	left:10px;
+	
+
+}
+
+
+div#fotojugadorgonzalez{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/gonzalez.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+
+
+/* INDALO - TABLA JUGADORES */
+
+.vermastabla {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-align: center;
+}
+
+
+
+div#tablajugadores1 {
+	position:relative;
+	width: 152px;
+	height: 20px;
+	top: 2px;
+	visibility: visible;
+	
+}
+
+
+div#tablajugadores2 {
+	position:relative;
+	width: 152px;
+	height: 235px;
+	top: 0px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/images/home/tabla-jugadores-2.jpg);
+	visibility: visible;
+	background-repeat: repeat;
+}
+
+div#fotojugador1 {
+	position:relative;
+	width: 37px;
+	height: 37px;
+	top: 6px;
+	left: 10px;
+	visibility: visible;
+	
+}
+
+div#fotojugador2 {
+	position:relative;
+	width: 37px;
+	height: 37px;
+	top: 15px;
+	left: 10px;
+	visibility: visible;
+	
+}
+
+div#fotojugador3 {
+	position:relative;
+	width: 37px;
+	height: 37px;
+	top: 25px;
+	left: 10px;
+	visibility: visible;
+	
+}
+
+div#fotojugador4 {
+	position:relative;
+	width: 37px;
+	height: 37px;
+	top: 35px;
+	left: 10px;
+	visibility: visible;
+	
+}
+
+div#fotojugador5 {
+	position:relative;
+	width: 37px;
+	height: 37px;
+	top: 45px;
+	left: 10px;
+	visibility: visible;
+	z-index: 1;	
+}
+
+div#nombrejugador1 {
+	position:relative;
+	width: 80px;
+	height: 12px;
+	top: -7px;
+	left: 4px;
+	visibility: visible;
+}
+
+div#bajadajugador1 {
+	position:relative;
+	width: 80px;
+	height: 12px;
+	top: -20px;
+	left: 8px;
+	visibility: visible;
+}
+
+
+div#nombrejugador2 {
+	position:relative;
+	width: 80px;
+	height: 12px;
+	top: -12px;
+	left: 4px;
+	visibility: visible;
+}
+
+div#bajadajugador2 {
+	position:relative;
+	width: 80px;
+	height: 12px;
+	top: 30px;
+	left: 4px;
+	visibility: visible;
+}
+
+
+div#nombrejugador3 {
+	position:relative;
+	width: 80px;
+	height: 12px;
+	top: -20px;
+	left: 4px;
+	visibility: visible;
+}
+div#bajadajugador3 {
+	position:relative;
+	width: 80px;
+	height: 12px;
+	top: 50px;
+	left: 4px;
+	visibility: visible;
+}
+
+div#nombrejugador4 {
+	position:relative;
+	width: 80px;
+	height: 12px;
+	top: -25px;
+	left: 4px;
+	visibility: visible;
+}
+
+div#bajadajugador4 {
+	position:relative;
+	width: 80px;
+	height: 12px;
+	top: 75px;
+	left: 4px;
+	visibility: visible;
+}
+
+div#nombrejugador5 {
+	position:relative;
+	width: 80px;
+	height: 12px;
+	top: -30px;
+	left: 4px;
+	visibility: visible;
+}
+
+div#bajadajugador5 {
+	position:relative;
+	width: 80px;
+	height: 12px;
+	top: 95px;
+	left: 4px;
+	visibility: visible;
+}
+
+div#vermasjugadores {
+	position:relative;
+	width: 100px;
+	height: 10px;
+	top:-34px;
+	left: 40px;
+	visibility: visible;
+	text-decoration: underline;
+}
+
+.titulojugadortabla {
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+        line-height: 14px;
+}
+
+.bajadajugadortabla {
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+
+div#tablajugadores3 {
+	position:relative;
+	width: 152px;
+	height: 20px;
+	top: 0px;
+	background-image: url(images/home/tabla-jugadores-3.jpg);
+	visibility: visible;
+	background-repeat: no-repeat;
+}
+
+
+/* INDALO - CSS  */
+
+
+div#bannermovistar {
+	position:relative;
+	width: 155px;
+	height: 180px;
+	top: 0px;
+	visibility: visible;
+	padding-left: 7px;
+	padding-bottom: 6px;
+	padding-right: 5px; 
+        z-index: 0;
+
+}
+
+
+
+.titulojugador {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-align: left;
+}
+
+
+.margendefoto {
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+.titulodescripcion {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 9px;
+         font-style: normal;
+         font-weight: normal;
+         color: #000000;
+		 text-align: left;
+}
+
+
+div#contador{
+	position:relative;
+	width: 145px;
+	height: 87px;
+	top: 0px;
+	
+}
+
+div#bannermovistar{
+	position:relative;
+	width: 145px;
+	height: 175px;
+	top: 5px;
+	z-index: 0;
+}
+
+
+div#informetiempo{
+        position:relative;
+        width: 152px;
+        height: 93px;
+        top: 0px;
+}
+
+div#banneratp{
+        position:relative;
+        width: 152px;
+        height: 95px;
+        top: 4px;
+}
+
+div#lista_jugadores{
+        position:relative;
+        top: 5px;
+}
+
+
+div#principal{
+	position:absolute;
+	width: 510px;
+	height: 351px;
+	background-image: url(../../../images/home/fotoprincipal.jpg);
+	visibility: visible;
+	background-repeat: no-repeat;
+}
+
+div#textotitulotoprincipal{
+	position:absolute;
+	width: 180px;
+	height: 60px;
+	top: 170px;
+	left: 305px;
+	visibility: visible;
+}
+
+div#textbajadaprincipal{
+	position:absolute;
+	width: 180px;
+	height: 100px;
+	top: 230px;
+	left: 305px;
+	visibility: visible;
+	
+}
+
+div#textvermasportada{
+	position:absolute;
+	width: 50px;
+	height: 10px;
+	top: 310px;
+	left: 450px;
+
+	visibility: visible;
+	
+}
+
+.tituloportada {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+	color: #040D38;
+}
+
+.bajadaportada {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-align: justify;
+}
+
+.vermas {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	color: #040D38;
+}
+
+.titulodestacados {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	color: #040D38;
+        line-height:13px;
+}
+
+.bajadadestacados {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-align: justify;
+        line-height:12px
+}
+div#secundarios{
+	position:relative;
+	width: 510px;
+	height: 118px;
+	top: 358px;
+	background-image: url(../../../images/home/noticias_0801.jpg);
+	visibility: visible;
+	background-repeat: no-repeat;
+        z-index: 51;
+}  
+
+div#secundariosnuevo{
+	position:relative;
+	width: 510px;
+	height: 118px;
+	top: 358px;
+	background-image: url(../../../images/home/foto_marcoblanco.jpg);
+	visibility: visible;
+	background-repeat: no-repeat;
+        z-index: 51;
+}  
+
+
+div#fotoizquierda{
+	position:absolute;;
+	width: 103px;
+	height: 117px;
+	top: 0px;
+	left: 160px;
+	visibility: visible;
+	z-index: 52;
+	background-image: url(../../../images/home/fotoizquierda.jpg);
+}
+
+
+div#fotoderecha{
+	position:absolute;;
+	width: 100px;
+	height: 116px;
+	top: 1px;
+	left: 410px;
+	visibility: visible;
+	z-index: 52;
+	background-image: url(../../../images/home/fotoderecha.jpg);
+
+}  
+
+
+
+div#textotitulodestacado1{
+	position:absolute;;
+	width: 140px;
+	height: 18px;
+	top: -6px;
+	left: 8px;
+	visibility: visible;
+}
+
+div#textbajadadestacado1{
+	position:absolute;
+	width: 140px;
+	height: 50px;
+	top: 40px;
+	left: 8px;
+	visibility: visible;
+	
+}
+
+div#textvermasdestacado1{
+	position:absolute;
+	width: 50px;
+	height: 10px;
+	top: 92px;
+	left: 100px;
+	visibility: visible;
+	
+}
+
+div#textotitulodestacado2{
+	position:absolute;;
+	width: 130px;
+	height: 18px;
+	top: -6px;
+	left: 270px;
+	visibility: visible;
+}
+
+div#textbajadadestacado2{
+	position:absolute;
+	width: 130px;
+	height: 50px;
+	top: 40px;
+	left: 270px;
+	visibility: visible;
+	
+}
+
+div#textvermasdestacado2{
+position:absolute;
+	width: 50px;
+	height: 10px;
+	top: 92px;
+	left: 358px;
+	visibility: visible;
+	
+}
+
+
+/* ENCUESTA */
+
+
+
+table.moduletable-myencuesta {
+    width: 100%;
+    background: url(http://desarrollo.datapartner.cl/movistar/images/home/votacion.jpg) repeat-x;
+    background-color: #fff001;
+    margin: 0px 0px 10px 0px;
+    border-left: solid 0px #000000;
+    border-right: solid 0px #000000;
+    border-top: solid 0px #000000;
+    border-bottom: solid 0px #000000;
+}
+table.moduletable-myencuesta  th {
+    background: url(http://desarrollo.datapartner.cl/movistar/images/home/votacion.jpg) no-repeat;
+    vertical-align: middle;
+    font-size: 11px;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-align: left;
+    text-indent: 20px;
+    width: 100%;
+    height: 20px;
+    text-transform: uppercase;
+}
+table.moduletable-myencuesta td {
+    font-size: 8px;
+ background: url(http://desarrollo.datapartner.cl/movistar/images/home/votacion.jpg) no-repeat;
+    padding: 0px;
+    font-weight: normal;
+}
+
+
+/* CSS PERFIL DE JUGADORES */
+
+
+.titulojugadores {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	line-height: 20px;	
+		
+}
+
+.titulotrayectoria {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-align: center;
+	font-weight: bold;
+	color: #0000FF;
+		
+}
+
+.datostitulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	line-height: 15px;		
+}
+
+.datosresultados {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	color: #000000;
+	line-height: 15px;		
+		
+}
+
+
+
+
+div#fondofoto{
+	position:relative;
+	width: 524px;
+	height: 177px;
+	top: 0px;
+	background-image: url(images/perfil-de-jugadores3.jpg);
+	background-repeat: no-repeat;
+}
+
+div#fondolistado{
+	position:relative; 
+	width: 135px;
+	height: 420px;
+	top: 5px;
+	left:43px;
+	background-color: #E9E7E8;
+	
+}
+
+div#titulotrayectoria {
+	position:relative;
+	top: 15px;
+	left:18px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: #000066;
+}
+
+
+div#tablatrayectoria {
+	position:relative;
+	top: 40px;
+	left:25px;
+	
+}
+
+
+div#fotojugador{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/gonzalez.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#nombre{
+	position:relative;
+	width: 260px;
+	height: 14px;
+	top: -160;
+	left: 200px;
+}
+
+div#fotojugadoracasuso{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/acasuso.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorberlocq{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/berlocq.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorbrzezicki{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/brzezicki.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorcalleri{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/calleri.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorcanas{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/canas.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorcapdeville {
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/capdeville.jpg );
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorchela{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/chela.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorcoria{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/coria.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorfognini{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/fognini.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorhartfield{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/hartfield.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorhernandez{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/hernandez.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorhorna{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/horna.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+
+div#fotojugadorluczak{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/luczak.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadormassu{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/massu.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadormonaco{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/monaco.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorpashanski{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/pashanski.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorpatience{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/patience.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorroitman{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/roitman.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorvassallo{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/vassallo.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorventura{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/ventura.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorverdasco{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/verdasco.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorzabaleta{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/zabaleta.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+divfotojugadorlapentti{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/lapentti.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+div#fotojugadorcuevas{
+	position:relative;
+	width: 123px;
+	height: 165px;
+	top: 3px;
+	left: 49px;
+	background-image: url(http://desarrollo.datapartner.cl/movistar/templates/rt_versatility_iii/css/images/jugadores/cuevas.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+
+/* CSS NOTICIAS DESTACADAS */
+
+
+.title
+{
+	height: 28px;
+	width: 200px;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 7px;
+	
+}
+
+.text
+{
+	position:relative;
+	top: 8px;
+	height: 75px;
+	width: 200px;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 7px;
+	text-align: justify;	
+}
+
+
+.readmore
+{
+	position:relative;
+	top: 0px;
+	padding-top: 0px;
+	padding-left: 100px;
+	
+}
+
+
+/* CSS TABLA DE PROGRAMACION Y RESULTADOS */
+
+.titulodelatabla
+{
+	font-family:arial;
+	font-size:16px;
+	font-weight:bold;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+.titulodedatostabla
+{
+	font-family:arial;
+	font-size:11px;
+	font-weight:bold;
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.datosdelatabla
+{
+	font-family:arial;
+	font-size:11px;
+	font-weight:bold;
+	text-align: center;
+	color: #4A5A84;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+
+#posicioncontador
+{
+	height: 87px;
+	width: 145px;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	border:0px;
+	
+		
+}
+
+
+.fechasgalerias {
+	color: #040D38;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0px;
+	padding: 0px 5px 5px 0px; 
+	
+	
+	}
+
+
+/* @end */
+
+/* @end */
+
+
+
+
+
+/*
+Images are wrapped in divs classed "flickr_badge_image" with ids
+"flickr_badge_imageX" where "X" is an integer specifying ordinal position.
+Below are some styles to get you started!
+*/
+#flickr_badge_uber_wrapper {text-align:center;}
+#flickr_badge_wrapper {padding:10px 0 10px 0;}
+.flickr_badge_image { float:left;}
+.flickr_badge_image img {float: left; margin: 0 3px 3px 0;}
+#flickr_badge_icon {float:left; margin-right:5px;}
+#flickr_www {display:block; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
